@@ -110,7 +110,7 @@
     Senior engineer with ten years of full-stack experience who now builds software with and around AI.
     I am an Anthropic-certified Claude architect. I built a self-improving Claude Code plugin that takes
     work from discovery to delivery with a human in the loop, and I use it today as the sole engineer of
-    an AI news publishing platform, where I also built the content pipeline and teach other teams the
+    an AI real estate news platform, where I also built the content pipeline and teach other teams the
     plugin. In this way of working I stay the engineer: I define the architecture, make the hard decisions
     and review every change, and the agents do the implementation inside those limits. Underneath is a
     solid base in Go, Java, Spring Boot, React, Angular and Vue on AWS and Azure, and in test-first delivery.
@@ -161,7 +161,7 @@
   <dt>Frontend</dt>
   <dd>TypeScript, JavaScript, Angular, Vue 3, React, Next.js</dd>
   <dt>Data</dt>
-  <dd>PostgreSQL, PGVector, Oracle, MongoDB, DynamoDB, Elasticsearch, Redis</dd>
+  <dd>PostgreSQL, PGVector, Oracle, MongoDB, DynamoDB, Elasticsearch, OpenSearch, Redis</dd>
   <dt>Cloud and DevOps</dt>
   <dd>AWS (Lambda, SQS, SNS, Cognito, SES, CloudFormation), Azure (Functions, Service Bus, Container Apps, DevOps), Docker, Terraform, Jenkins</dd>
   <dt>Quality</dt>
@@ -178,15 +178,15 @@
   <p>Software consultancy. Full-stack engineer embedded in client product teams.</p>
 
   <div class="project">
-    <h4>AI news publishing platform <span>· current</span></h4>
+    <h4>AI real estate news platform <span>· current</span></h4>
     <ul class="points">
       <li>Sole engineer on the platform. I work directly with the stakeholders, create and prioritise the backlog, and shape new features from their product feedback.</li>
-      <li>Build the full stack in Go, React and Next.js on AWS: a reader website with the published articles, and a CMS where editors create, edit, approve and publish articles and manage the reader pages.</li>
+      <li>Build the full stack in Go, React and Next.js on AWS: a reader website with the published articles, and a CMS where editors create, edit, approve and publish articles and manage the reader pages. Articles are stored and searched in OpenSearch, with Redis for caching.</li>
       <li>Designed and built the AI pipeline behind the content, with one step per task: discovering stories across several data sources, preparing a draft article, adding links to the tenant's website to bring traffic and visibility to the tenant and its partners, and generating SEO metadata.</li>
       <li>Added guardrail steps to the pipeline that check quality and detect duplicates before a draft reaches an editor, with the models served through Amazon Bedrock and every run traced in Langfuse.</li>
       <li>Deliver the whole platform with the Claude Code plugin I built, from discovery to pull request, and teach other teams in the company how to use it.</li>
     </ul>
-    <p class="stack">Go, React, Next.js, AWS, Amazon Bedrock, Langfuse, Claude Code</p>
+    <p class="stack">Go, React, Next.js, AWS, OpenSearch, Redis, Amazon Bedrock, Langfuse, Claude Code</p>
   </div>
 
   <div class="project">
