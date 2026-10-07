@@ -108,8 +108,8 @@
   </ul>
   <p class="summary">
     Senior engineer with ten years of full-stack experience who now builds software with and around AI.
-    I am an Anthropic-certified Claude architect. I built a Claude Code plugin that takes work from
-    discovery to delivery with a human in the loop, an environment where a coding agent works through a
+    I am an Anthropic-certified Claude architect. I built a self-improving Claude Code plugin that takes work
+    from discovery to delivery with a human in the loop, an environment where a coding agent works through a
     backlog on its own under my approval, and an 11-step multi-agent RAG pipeline. At work I co-designed
     the AI development toolkit my team uses every day. Underneath is a solid base in Java, Spring Boot,
     Angular, Vue and React on AWS and Azure, and in test-first delivery.
@@ -119,11 +119,13 @@
 <h2>AI engineering highlights</h2>
 <ul class="highlights">
   <li>
-    <strong>Claude Code plugin: from discovery to delivery, human in the loop.</strong>
+    <strong>Self-improving Claude Code plugin: from discovery to delivery, human in the loop.</strong>
     I built a plugin that turns requirements into epics and user stories, then takes each story through
     architecture, task split, test-first implementation, a five-dimension PASS/FAIL review, story tests
     and a pull request with the evidence attached. A person approves at every gate before the next phase
-    can start. 12 specialised agents, 15 commands, 9 skills and 3 safety hooks.
+    can start. The plugin also improves itself: every command ends with a short retrospective, and an
+    analyst agent groups the recurring friction and human corrections into concrete changes to the plugin,
+    which I approve before they are applied. 12 specialised agents, 15 commands, 9 skills and 3 safety hooks.
   </li>
   <li>
     <strong>Autonomous coding agent with human approval.</strong>
@@ -309,7 +311,7 @@
     <li>Designed it around continuous compliance: risk and maturity scoring, prioritised remediation actions, evidence management, policy generation and audit preparation.</li>
     <li>Enforced tenant isolation twice, in application code and with PostgreSQL row-level security, and kept evidence and audit records append-only.</li>
     <li>Designed integrations that collect technical evidence automatically from AWS, Azure, GCP and GitHub.</li>
-    <li>Built the Claude Code plugin the project is developed with, covering discovery to delivery with human approval at every gate: 12 agents, 15 commands, 9 skills and 3 safety hooks that run each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached. It is project-agnostic and also runs unattended.</li>
+    <li>Built the Claude Code plugin the project is developed with, covering discovery to delivery with human approval at every gate: 12 agents, 15 commands, 9 skills and 3 safety hooks that run each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached. It records a retrospective after every command and proposes its own improvements from them. It is project-agnostic and also runs unattended.</li>
     <li>Built an autonomous development environment in which a sandboxed coding agent works through the backlog one phase at a time, while I approve key decisions from my phone and merge every pull request.</li>
     <li>Made every technical decision, from architecture and data design to infrastructure, and recorded them in 27 architecture decision records.</li>
   </ul>
