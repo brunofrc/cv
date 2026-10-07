@@ -132,7 +132,7 @@
     The agent cannot merge, deploy or change its own rules. 223 unit tests; its first stories are merged.
   </li>
   <li>
-    <strong>Multi-agent RAG pipeline in production code.</strong>
+    <strong>Multi-agent RAG pipeline.</strong>
     Eleven single-purpose agents built with Spring AI and LangChain4j generate compliance assessments
     grounded in regulatory text retrieved from PGVector, with a rules engine and a quality loop that
     sends weak output back.
@@ -304,7 +304,7 @@
     design and build on my own. It is also where I develop and test my AI engineering tooling.
   </p>
   <ul class="points">
-    <li>Designed and built the whole platform: three Spring Boot services (assessment, identity and tenancy, API gateway), an Angular 20 web app, a Python extraction pipeline and the marketing site. About 52,000 lines of production Java.</li>
+    <li>Designed and built the whole platform: three Spring Boot services (assessment, identity and tenancy, API gateway), an Angular 20 web app, a Python extraction pipeline and the marketing site. About 52,000 lines of Java, not counting tests.</li>
     <li>Built an 11-step multi-agent pipeline with Spring AI and LangChain4j that generates assessments from a company's context: input validation, RAG retrieval of regulatory text, question generation, framework mapping, quality and coverage checks, and final assembly, with human review before release.</li>
     <li>Designed it around continuous compliance: risk and maturity scoring, prioritised remediation actions, evidence management, policy generation and audit preparation.</li>
     <li>Enforced tenant isolation twice, in application code and with PostgreSQL row-level security, and kept evidence and audit records append-only.</li>
