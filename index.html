@@ -108,21 +108,22 @@
   </ul>
   <p class="summary">
     Senior engineer with ten years of full-stack experience who now builds software with and around AI.
-    I am an Anthropic-certified Claude architect, the author of a Claude Code plugin that runs a full
-    gated delivery pipeline, the builder of an autonomous coding-agent environment, and the sole engineer
-    of an AI SaaS with an 11-step multi-agent RAG pipeline. At work I co-designed the AI development
-    toolkit my team uses every day. Underneath is a solid base in Java, Spring Boot, Angular, Vue and
-    React on AWS and Azure, and in test-first delivery.
+    I am an Anthropic-certified Claude architect. I built a Claude Code plugin that takes work from
+    discovery to delivery with a human in the loop, an environment where a coding agent works through a
+    backlog on its own under my approval, and an 11-step multi-agent RAG pipeline. At work I co-designed
+    the AI development toolkit my team uses every day. Underneath is a solid base in Java, Spring Boot,
+    Angular, Vue and React on AWS and Azure, and in test-first delivery.
   </p>
 </header>
 
 <h2>AI engineering highlights</h2>
 <ul class="highlights">
   <li>
-    <strong>Author of a Claude Code delivery plugin.</strong>
-    12 specialised agents, 15 commands, 9 skills and 3 safety hooks take a user story through architecture,
-    task split, test-first implementation, a five-dimension PASS/FAIL review, story tests and a pull request
-    with the evidence attached. Every phase ends at a gate a person approves.
+    <strong>Claude Code plugin: from discovery to delivery, human in the loop.</strong>
+    I built a plugin that turns requirements into epics and user stories, then takes each story through
+    architecture, task split, test-first implementation, a five-dimension PASS/FAIL review, story tests
+    and a pull request with the evidence attached. A person approves at every gate before the next phase
+    can start. 12 specialised agents, 15 commands, 9 skills and 3 safety hooks.
   </li>
   <li>
     <strong>Autonomous coding agent with human approval.</strong>
@@ -164,28 +165,6 @@
 </dl>
 
 <h2>Experience</h2>
-
-<section class="job">
-  <div class="job-head">
-    <h3>Founder and sole engineer <span>· MiraSec</span></h3>
-    <span class="dates">2025 – Present</span>
-  </div>
-  <p>
-    An AI-native cybersecurity and compliance platform that helps small companies in the EU meet NIS2,
-    GDPR, ENS and ISO 27001. Working MVP, pre-launch.
-  </p>
-  <ul class="points">
-    <li>Designed and built the whole product: three Spring Boot services (assessment, identity and tenancy, API gateway), an Angular 20 web app, a Python extraction pipeline and the marketing site. About 52,000 lines of production Java.</li>
-    <li>Built an 11-step multi-agent pipeline with Spring AI and LangChain4j that generates assessments from a company's context: input validation, RAG retrieval of regulatory text, question generation, framework mapping, quality and coverage checks, and final assembly, with human review before release.</li>
-    <li>Designed the product around continuous compliance: risk and maturity scoring, prioritised remediation actions, evidence management, policy generation and audit preparation.</li>
-    <li>Enforced tenant isolation twice, in application code and with PostgreSQL row-level security, and kept evidence and audit records append-only.</li>
-    <li>Designed integrations that collect technical evidence automatically from AWS, Azure, GCP and GitHub.</li>
-    <li>Created the Claude Code plugin the product is built with: 12 agents, 15 commands, 9 skills and 3 safety hooks that run each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached. It is project-agnostic and also runs unattended.</li>
-    <li>Built an autonomous development environment in which a sandboxed coding agent works through the backlog one phase at a time, while I approve key decisions from my phone and merge every pull request.</li>
-    <li>Own the technical direction: architecture, technology choices, data and API design, infrastructure and engineering practices, recorded in 27 architecture decision records.</li>
-  </ul>
-  <p class="stack">Java 21 and 25, Spring Boot 3.5, Spring AI, LangChain4j, Angular 20, Python, PostgreSQL with PGVector, MongoDB, DynamoDB, Redis, AWS, Docker, Terraform, Claude Code, Codex</p>
-</section>
 
 <section class="job">
   <div class="job-head">
@@ -311,6 +290,30 @@
   <ul class="points">
     <li>Took part in the full software lifecycle: analysing incidents and requirements, updating reports through Oracle and MySQL, and manual testing.</li>
   </ul>
+</section>
+
+<h2>Side project</h2>
+
+<section class="job">
+  <div class="job-head">
+    <h3>MiraSec <span>· AI compliance platform</span></h3>
+    <span class="dates">2025 – Present</span>
+  </div>
+  <p>
+    An AI-native cybersecurity and compliance platform for NIS2, GDPR, ENS and ISO 27001, which I
+    design and build on my own. It is also where I develop and test my AI engineering tooling.
+  </p>
+  <ul class="points">
+    <li>Designed and built the whole platform: three Spring Boot services (assessment, identity and tenancy, API gateway), an Angular 20 web app, a Python extraction pipeline and the marketing site. About 52,000 lines of production Java.</li>
+    <li>Built an 11-step multi-agent pipeline with Spring AI and LangChain4j that generates assessments from a company's context: input validation, RAG retrieval of regulatory text, question generation, framework mapping, quality and coverage checks, and final assembly, with human review before release.</li>
+    <li>Designed it around continuous compliance: risk and maturity scoring, prioritised remediation actions, evidence management, policy generation and audit preparation.</li>
+    <li>Enforced tenant isolation twice, in application code and with PostgreSQL row-level security, and kept evidence and audit records append-only.</li>
+    <li>Designed integrations that collect technical evidence automatically from AWS, Azure, GCP and GitHub.</li>
+    <li>Built the Claude Code plugin the project is developed with, covering discovery to delivery with human approval at every gate: 12 agents, 15 commands, 9 skills and 3 safety hooks that run each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached. It is project-agnostic and also runs unattended.</li>
+    <li>Built an autonomous development environment in which a sandboxed coding agent works through the backlog one phase at a time, while I approve key decisions from my phone and merge every pull request.</li>
+    <li>Made every technical decision, from architecture and data design to infrastructure, and recorded them in 27 architecture decision records.</li>
+  </ul>
+  <p class="stack">Java 21 and 25, Spring Boot 3.5, Spring AI, LangChain4j, Angular 20, Python, PostgreSQL with PGVector, MongoDB, DynamoDB, Redis, AWS, Docker, Terraform, Claude Code, Codex</p>
 </section>
 
 <h2>Certification</h2>
