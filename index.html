@@ -109,8 +109,9 @@
   <p class="summary">
     Senior engineer with ten years of full-stack experience who now builds software with and around AI.
     I am an Anthropic-certified Claude architect. I built a self-improving Claude Code plugin that takes work
-    from discovery to delivery with a human in the loop, an environment where a coding agent works through a
-    backlog on its own under my approval, and an 11-step multi-agent RAG pipeline. At work I co-designed
+    from discovery to delivery with a human in the loop, and an 11-step multi-agent RAG pipeline. In this way
+    of working I stay the engineer: I define the architecture, make the hard decisions and review every
+    change, and the agents do the implementation inside those limits. At work I co-designed
     the AI development toolkit my team uses every day. Underneath is a solid base in Java, Spring Boot,
     Angular, Vue and React on AWS and Azure, and in test-first delivery.
   </p>
@@ -128,10 +129,11 @@
     which I approve before they are applied. 12 specialised agents, 15 commands, 9 skills and 3 safety hooks.
   </li>
   <li>
-    <strong>Autonomous coding agent with human approval.</strong>
-    A sandboxed Claude Code agent works through a real backlog unattended. A deterministic Python runner
-    validates each typed result, re-runs the tests itself and asks me for decisions on my phone.
-    The agent cannot merge, deploy or change its own rules. 223 unit tests; its first stories are merged.
+    <strong>Agents implement, I decide.</strong>
+    I define the architecture, write the decision records and make the hard calls: the data model,
+    security, scope and trade-offs. Agents then implement test-first inside those limits, each change
+    passes an independent review, and I review and merge every pull request myself. Agents cannot merge,
+    deploy or change their own rules.
   </li>
   <li>
     <strong>Multi-agent RAG pipeline.</strong>
@@ -311,8 +313,8 @@
     <li>Designed it around continuous compliance: risk and maturity scoring, prioritised remediation actions, evidence management, policy generation and audit preparation.</li>
     <li>Enforced tenant isolation twice, in application code and with PostgreSQL row-level security, and kept evidence and audit records append-only.</li>
     <li>Designed integrations that collect technical evidence automatically from AWS, Azure, GCP and GitHub.</li>
-    <li>Built the Claude Code plugin the project is developed with, covering discovery to delivery with human approval at every gate: 12 agents, 15 commands, 9 skills and 3 safety hooks that run each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached. It records a retrospective after every command and proposes its own improvements from them. It is project-agnostic and also runs unattended.</li>
-    <li>Built an autonomous development environment in which a sandboxed coding agent works through the backlog one phase at a time, while I approve key decisions from my phone and merge every pull request.</li>
+    <li>Built the Claude Code plugin the project is developed with, covering discovery to delivery with human approval at every gate: 12 agents, 15 commands, 9 skills and 3 safety hooks that run each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached. It records a retrospective after every command and proposes its own improvements from them. It is project-agnostic.</li>
+    <li>Lead the agent-assisted delivery myself: I set the architecture and take the hard decisions, the agents implement, and I review and merge every pull request. I am also testing a sandboxed set-up in which an agent works through backlog stories one phase at a time and asks for my approval at each decision.</li>
     <li>Made every technical decision, from architecture and data design to infrastructure, and recorded them in 27 architecture decision records.</li>
   </ul>
   <p class="stack">Java 21 and 25, Spring Boot 3.5, Spring AI, LangChain4j, Angular 20, Python, PostgreSQL with PGVector, MongoDB, DynamoDB, Redis, AWS, Docker, Terraform, Claude Code, Codex</p>
