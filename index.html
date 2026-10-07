@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bruno Costa · Senior Software Engineer</title>
+<meta name="description" content="Bruno Costa, senior full-stack software engineer: Java, Spring Boot, Angular, Vue, AWS, and AI agents with Claude Code.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c2024;
+    --muted: #5b6470;
+    --line: #e3e6ea;
+    --accent: #0b5cad;
+    --chip: #f2f4f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --text: #e6e8eb;
+      --muted: #9aa3ad;
+      --line: #2a2f35;
+      --accent: #7ab8f5;
+      --chip: #1f2428;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 820px; margin: 0 auto; padding: 48px 20px 64px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header h1 { margin: 0; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; }
+  header .role { margin: 6px 0 12px; font-size: 18px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; list-style: none; font-size: 14px; }
+  .summary { margin: 22px 0 0; font-size: 16px; }
+
+  h2 {
+    margin: 40px 0 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .skills { display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; margin: 0; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; }
+
+  .job { margin-bottom: 28px; }
+  .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 2px 16px; }
+  .job-head h3 { margin: 0; font-size: 17px; }
+  .job-head h3 span { font-weight: 400; color: var(--muted); }
+  .dates { color: var(--muted); font-size: 14px; white-space: nowrap; }
+  .job > p { margin: 6px 0 0; }
+
+  .project { margin-top: 16px; padding-left: 14px; border-left: 2px solid var(--line); }
+  .project h4 { margin: 0; font-size: 15px; }
+  .project h4 span { font-weight: 400; color: var(--muted); }
+
+  ul.points { margin: 6px 0 0; padding-left: 18px; }
+  ul.points li { margin: 3px 0; }
+  .stack { margin: 8px 0 0; font-size: 13.5px; color: var(--muted); }
+
+  .plain { margin: 0; padding: 0; list-style: none; }
+  .plain li { margin: 4px 0; }
+
+  @media (max-width: 560px) {
+    main { padding-top: 32px; }
+    header h1 { font-size: 28px; }
+    .skills { grid-template-columns: 1fr; gap: 0; }
+    .skills dd { margin-bottom: 10px; }
+  }
+
+  @media print {
+    @page { size: A4; margin: 14mm 15mm; }
+    :root { --bg: #fff; --text: #111; --muted: #444; --line: #ccc; --accent: #111; }
+    body { font-size: 10.5pt; line-height: 1.4; }
+    main { max-width: none; padding: 0; }
+    header h1 { font-size: 22pt; }
+    h2 { margin-top: 20px; break-after: avoid; }
+    .project, .job-head { break-inside: avoid; }
+    .job { margin-bottom: 16px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Bruno Costa</h1>
+  <p class="role">Senior Software Engineer · Full-stack and AI-assisted engineering</p>
+  <ul class="links">
+    <li><a href="https://github.com/brunofrc">github.com/brunofrc</a></li>
+    <li><a href="https://www.credly.com/badges/b29c8bb5-3efc-4862-ad95-fd3805679e97/linked_in_profile">Claude Code Architect Certified</a></li>
+  </ul>
+  <p class="summary">
+    Full-stack engineer with ten years of experience building backend services and web applications,
+    mostly in Java and Spring Boot with Angular, Vue or React, on AWS and Azure. I work across the whole
+    delivery cycle: refining requirements, deciding the architecture, building test-first and running
+    what I ship. Since 2025 I have also built a multi-tenant AI SaaS as its sole engineer, together with
+    the Claude Code tooling that lets coding agents deliver real work under human approval.
+  </p>
+</header>
+
+<h2>Skills</h2>
+<dl class="skills">
+  <dt>Backend</dt>
+  <dd>Java, Spring Boot, Node.js, Python, Ruby, Go, Kafka, REST and event-driven services</dd>
+  <dt>Frontend</dt>
+  <dd>TypeScript, JavaScript, Angular, Vue 3, React, Next.js</dd>
+  <dt>AI</dt>
+  <dd>Claude Code (plugins, agents, skills, hooks), Codex, Spring AI, LangChain, LangChain4j, RAG, multi-agent pipelines</dd>
+  <dt>Data</dt>
+  <dd>PostgreSQL, PGVector, Oracle, MongoDB, DynamoDB, Elasticsearch, Redis</dd>
+  <dt>Cloud and DevOps</dt>
+  <dd>AWS (Lambda, SQS, SNS, Cognito, SES, CloudFormation), Azure (Functions, Service Bus, Container Apps, DevOps), Docker, Terraform, Jenkins</dd>
+  <dt>Quality</dt>
+  <dd>TDD, JUnit, Mockito, Jest, Playwright, Selenium, SonarQube</dd>
+</dl>
+
+<h2>Experience</h2>
+
+<section class="job">
+  <div class="job-head">
+    <h3>Founder and sole engineer <span>· MiraSec</span></h3>
+    <span class="dates">2025 – Present</span>
+  </div>
+  <p>
+    An AI-native cybersecurity and compliance platform that helps small companies in the EU meet NIS2,
+    GDPR, ENS and ISO 27001. Working MVP, pre-launch.
+  </p>
+  <ul class="points">
+    <li>Designed and built the whole product: three Spring Boot services (assessment, identity and tenancy, API gateway), an Angular 20 web app, a Python extraction pipeline and the marketing site. About 52,000 lines of production Java.</li>
+    <li>Built an 11-step multi-agent pipeline with Spring AI and LangChain4j that generates assessments from a company's context: input validation, RAG retrieval of regulatory text, question generation, framework mapping, quality and coverage checks, and final assembly, with human review before release.</li>
+    <li>Designed the product around continuous compliance: risk and maturity scoring, prioritised remediation actions, evidence management, policy generation and audit preparation.</li>
+    <li>Enforced tenant isolation twice, in application code and with PostgreSQL row-level security, and kept evidence and audit records append-only.</li>
+    <li>Designed integrations that collect technical evidence automatically from AWS, Azure, GCP and GitHub.</li>
+    <li>Wrote a Claude Code plugin (12 agents, 15 commands) that runs each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached.</li>
+    <li>Built an autonomous development environment in which a sandboxed coding agent works through the backlog one phase at a time, while I approve key decisions from my phone and merge every pull request.</li>
+    <li>Own the technical direction: architecture, technology choices, data and API design, infrastructure and engineering practices, recorded in 27 architecture decision records.</li>
+  </ul>
+  <p class="stack">Java 21 and 25, Spring Boot 3.5, Spring AI, LangChain4j, Angular 20, Python, PostgreSQL with PGVector, MongoDB, DynamoDB, Redis, AWS, Docker, Terraform, Claude Code, Codex</p>
+</section>
+
+<section class="job">
+  <div class="job-head">
+    <h3>Senior Software Engineer <span>· Zartis</span></h3>
+    <span class="dates">Feb 2023 – Present</span>
+  </div>
+  <p>Software consultancy. Full-stack engineer embedded in client product teams.</p>
+
+  <div class="project">
+    <h4>4flow <span>· logistics platform</span></h4>
+    <ul class="points">
+      <li>Deliver full-stack features from story refinement, architecture design and technical planning through to production.</li>
+      <li>Build with Spring Boot, PostgreSQL, Kafka, Vue 3 and TypeScript: hexagonal backend architecture, secure APIs, event-driven processing and shared design-system components, with TDD, automated quality gates and security reviews.</li>
+      <li>Shape features before implementation by refining requirements, drafting stories, recording architectural decisions as ADRs and splitting work into well-scoped tasks.</li>
+      <li>Co-designed and built an internal AI development toolkit on Claude Code: a marketplace of domain plugins, reusable skills and specialised agents that covers story refinement, architecture, test-driven implementation and pull request creation, with feedback loops that improve the agents over time.</li>
+      <li>Member of the company-wide Frontend Community of Practice, aligning frontend standards across teams.</li>
+    </ul>
+    <p class="stack">Java 25, Spring Boot, Vue 3, TypeScript, PostgreSQL, Kafka, AWS, Claude Code</p>
+  </div>
+
+  <div class="project">
+    <h4>Nourish Care <span>· care management software</span></h4>
+    <ul class="points">
+      <li>Helped build a new greenfield platform for service assessments: price estimation, cost configuration, reviews, tracking and process optimisation.</li>
+      <li>Took an active part in architectural decisions, working closely with product and stakeholders.</li>
+      <li>Extended existing backend and frontend functionality with new business rules and features.</li>
+      <li>Delivered demos that contributed directly to the team growing from 2 to 5 engineers.</li>
+    </ul>
+    <p class="stack">Ruby, Node.js, Vue.js, PostgreSQL, Docker, Codex</p>
+  </div>
+
+  <div class="project">
+    <h4>SMS Group <span>· serverless event processing</span></h4>
+    <ul class="points">
+      <li>Developed AWS Lambda functions triggered by S3 events and API requests.</li>
+      <li>Used Cognito for authentication, SQS for messaging and SES for email notifications.</li>
+      <li>Integrated third-party APIs and stored data in DynamoDB.</li>
+      <li>Provisioned all resources with CloudFormation: permissions, roles, database schemas and API Gateway configuration.</li>
+    </ul>
+    <p class="stack">Java, AWS Lambda, DynamoDB, CloudFormation</p>
+  </div>
+
+  <div class="project">
+    <h4>SoftCo <span>· finance automation</span></h4>
+    <ul class="points">
+      <li>Built batch processing with Spring SFTP integration: validating batches of files, calling third-party APIs and storing results in MongoDB.</li>
+      <li>Developed a full web application with Spring Boot and Angular 16, using a generated Swagger API client, NgRx state management, Spring Security and caching.</li>
+      <li>Ran file processing as Azure Container Apps jobs integrated with other SoftCo systems.</li>
+      <li>Managed the infrastructure of every project I worked on with Terraform, including custom metrics, alerts and dashboards in Azure.</li>
+    </ul>
+    <p class="stack">Java, Spring Boot, Angular 16, MongoDB, Azure, Terraform</p>
+  </div>
+
+  <div class="project">
+    <h4>Internal projects</h4>
+    <ul class="points">
+      <li>Migrated CI/CD pipelines from GitHub Actions to Azure DevOps, recreating and optimising the existing workflows.</li>
+      <li>Developed serverless Azure Functions for event-driven automation in an internal application.</li>
+      <li>Extended an internal product built with Node.js, React and Next.js.</li>
+    </ul>
+    <p class="stack">Node.js, React, Next.js, Azure Functions, Azure DevOps</p>
+  </div>
+</section>
+
+<section class="job">
+  <div class="job-head">
+    <h3>Software Engineer <span>· Mindera</span></h3>
+    <span class="dates">Aug 2021 – Jan 2023</span>
+  </div>
+  <ul class="points">
+    <li>Migrated a legacy e-commerce product to microservices with Java 17, Spring Boot, React, GraphQL, Elasticsearch and MongoDB on AWS.</li>
+    <li>Built new features in existing products with Java 11 and 17, Spring Boot, React and Redux, tested with JUnit, Mockito and Jest.</li>
+    <li>Maintained the legacy platform (WCS, IBM MQ, Solr, Java 8) and the frontend pipelines in Jenkins.</li>
+  </ul>
+  <p class="stack">Java 11/17, Spring Boot, React, Redux, GraphQL, Elasticsearch, PostgreSQL, MongoDB, AWS, Jenkins</p>
+</section>
+
+<section class="job">
+  <div class="job-head">
+    <h3>Software Engineer <span>· Cognizant</span></h3>
+    <span class="dates">Aug 2020 – Jul 2021</span>
+  </div>
+  <ul class="points">
+    <li>Built new applications on a microservices architecture with Java, Spring Boot, Spring Security and Angular, applying TDD and design patterns.</li>
+    <li>Worked with SQL Server and Oracle databases.</li>
+    <li>Managed and maintained the team's Jenkins instances.</li>
+  </ul>
+  <p class="stack">Java, Spring Boot, Spring Security, Struts, Angular 6+, SQL Server, Oracle, Jenkins</p>
+</section>
+
+<section class="job">
+  <div class="job-head">
+    <h3>Java Developer <span>· Dual Systems Hungary</span></h3>
+    <span class="dates">Nov 2018 – Jul 2020</span>
+  </div>
+  <ul class="points">
+    <li>Implemented new features in, and maintained, an ERP product for logistics customers.</li>
+    <li>Set up continuous integration and unit testing for the company's main product.</li>
+    <li>Created and maintained Docker containers, shell scripts and FTP jobs on Linux and Mac servers.</li>
+    <li>Wrote PL/SQL procedures and scheduled jobs on Oracle.</li>
+  </ul>
+  <p class="stack">Java, JavaServer Faces, Servlets, JavaScript, Oracle PL/SQL, Docker, Linux</p>
+</section>
+
+<section class="job">
+  <div class="job-head">
+    <h3>Software Developer <span>· Everis</span></h3>
+    <span class="dates">Nov 2016 – May 2018</span>
+  </div>
+  <ul class="points">
+    <li>Developed quality and innovation applications with Spring Boot, Hibernate and JMS on the backend and AngularJS and Angular 5 on the frontend.</li>
+    <li>Set up all company projects in Jenkins and Sonar for continuous integration.</li>
+    <li>Worked with Oracle and MongoDB, and consumed web APIs to generate reports.</li>
+  </ul>
+  <p class="stack">Java, Spring Boot, Hibernate, JPA, JMS, AngularJS, Angular 5, Oracle, MongoDB, Jenkins, Sonar</p>
+</section>
+
+<section class="job">
+  <div class="job-head">
+    <h3>Intern <span>· Landix</span></h3>
+    <span class="dates">Jun 2016 – Oct 2016</span>
+  </div>
+  <ul class="points">
+    <li>Took part in the full software lifecycle: analysing incidents and requirements, updating reports through Oracle and MySQL, and manual testing.</li>
+  </ul>
+</section>
+
+<h2>Certification</h2>
+<ul class="plain">
+  <li><a href="https://www.credly.com/badges/b29c8bb5-3efc-4862-ad95-fd3805679e97/linked_in_profile">Claude Code Architect Certified</a></li>
+</ul>
+
+<h2>Education</h2>
+<ul class="plain">
+  <li><strong>Bachelor of Computer Science</strong>, Federal University of Uberlândia · 2014 – 2018</li>
+</ul>
+
+<h2>Languages</h2>
+<ul class="plain">
+  <li>Portuguese (native) · English (fluent) · Spanish (fluent)</li>
+</ul>
+
+</main>
+</body>
+</html>
