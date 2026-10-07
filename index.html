@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bruno Costa · Senior Software Engineer</title>
-<meta name="description" content="Bruno Costa, senior full-stack software engineer: Java, Spring Boot, Angular, Vue, AWS, and AI agents with Claude Code.">
+<meta name="description" content="Bruno Costa, senior software engineer and Anthropic-certified Claude architect: Claude Code plugins, AI agents, RAG, Java, Spring Boot, Angular, Vue.">
 <style>
   :root {
     --bg: #ffffff;
@@ -38,6 +38,10 @@
   header h1 { margin: 0; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; }
   header .role { margin: 6px 0 12px; font-size: 18px; color: var(--muted); }
   .links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; list-style: none; font-size: 14px; }
+  .badge { padding: 2px 10px; border: 1px solid var(--accent); border-radius: 999px; font-weight: 600; }
+  .highlights { margin: 0; padding: 0; list-style: none; }
+  .highlights li { margin: 0 0 10px; padding: 10px 14px; background: var(--chip); border-radius: 8px; }
+  .highlights strong { display: block; }
   .summary { margin: 22px 0 0; font-size: 16px; }
 
   h2 {
@@ -86,7 +90,8 @@
     main { max-width: none; padding: 0; }
     header h1 { font-size: 22pt; }
     h2 { margin-top: 20px; break-after: avoid; }
-    .project, .job-head { break-inside: avoid; }
+    .project, .job-head, .highlights li { break-inside: avoid; }
+    .highlights li { padding: 0; margin-bottom: 8px; }
     .job { margin-bottom: 16px; }
   }
 </style>
@@ -96,28 +101,60 @@
 
 <header>
   <h1>Bruno Costa</h1>
-  <p class="role">Senior Software Engineer · Full-stack and AI-assisted engineering</p>
+  <p class="role">Senior Software Engineer · AI Engineering and Full-stack</p>
   <ul class="links">
+    <li><a class="badge" href="https://www.credly.com/badges/b29c8bb5-3efc-4862-ad95-fd3805679e97/linked_in_profile">Claude Certified Architect · Anthropic</a></li>
     <li><a href="https://github.com/brunofrc">github.com/brunofrc</a></li>
-    <li><a href="https://www.credly.com/badges/b29c8bb5-3efc-4862-ad95-fd3805679e97/linked_in_profile">Claude Code Architect Certified</a></li>
   </ul>
   <p class="summary">
-    Full-stack engineer with ten years of experience building backend services and web applications,
-    mostly in Java and Spring Boot with Angular, Vue or React, on AWS and Azure. I work across the whole
-    delivery cycle: refining requirements, deciding the architecture, building test-first and running
-    what I ship. Since 2025 I have also built a multi-tenant AI SaaS as its sole engineer, together with
-    the Claude Code tooling that lets coding agents deliver real work under human approval.
+    Senior engineer with ten years of full-stack experience who now builds software with and around AI.
+    I am an Anthropic-certified Claude architect, the author of a Claude Code plugin that runs a full
+    gated delivery pipeline, the builder of an autonomous coding-agent environment, and the sole engineer
+    of an AI SaaS with an 11-step multi-agent RAG pipeline. At work I co-designed the AI development
+    toolkit my team uses every day. Underneath is a solid base in Java, Spring Boot, Angular, Vue and
+    React on AWS and Azure, and in test-first delivery.
   </p>
 </header>
 
+<h2>AI engineering highlights</h2>
+<ul class="highlights">
+  <li>
+    <strong>Author of a Claude Code delivery plugin.</strong>
+    12 specialised agents, 15 commands, 9 skills and 3 safety hooks take a user story through architecture,
+    task split, test-first implementation, a five-dimension PASS/FAIL review, story tests and a pull request
+    with the evidence attached. Every phase ends at a gate a person approves.
+  </li>
+  <li>
+    <strong>Autonomous coding agent with human approval.</strong>
+    A sandboxed Claude Code agent works through a real backlog unattended. A deterministic Python runner
+    validates each typed result, re-runs the tests itself and asks me for decisions on my phone.
+    The agent cannot merge, deploy or change its own rules. 223 unit tests; its first stories are merged.
+  </li>
+  <li>
+    <strong>Multi-agent RAG pipeline in production code.</strong>
+    Eleven single-purpose agents built with Spring AI and LangChain4j generate compliance assessments
+    grounded in regulatory text retrieved from PGVector, with a rules engine and a quality loop that
+    sends weak output back.
+  </li>
+  <li>
+    <strong>AI development toolkit for a client team.</strong>
+    Co-designed and built a Claude Code marketplace of domain plugins, reusable skills and specialised
+    agents covering story refinement through pull request, with feedback loops that improve the agents.
+  </li>
+  <li>
+    <strong>Claude Certified Architect (Anthropic).</strong>
+    <a href="https://www.credly.com/badges/b29c8bb5-3efc-4862-ad95-fd3805679e97/linked_in_profile">Verify the credential on Credly</a>.
+  </li>
+</ul>
+
 <h2>Skills</h2>
 <dl class="skills">
+  <dt>AI</dt>
+  <dd>Claude Code (plugins, agents, skills, hooks, unattended runs), Codex, AI agents and multi-agent pipelines, RAG, Spring AI, LangChain, LangChain4j, PGVector, prompt and context engineering, guardrails and human-in-the-loop approval</dd>
   <dt>Backend</dt>
   <dd>Java, Spring Boot, Node.js, Python, Ruby, Go, Kafka, REST and event-driven services</dd>
   <dt>Frontend</dt>
   <dd>TypeScript, JavaScript, Angular, Vue 3, React, Next.js</dd>
-  <dt>AI</dt>
-  <dd>Claude Code (plugins, agents, skills, hooks), Codex, Spring AI, LangChain, LangChain4j, RAG, multi-agent pipelines</dd>
   <dt>Data</dt>
   <dd>PostgreSQL, PGVector, Oracle, MongoDB, DynamoDB, Elasticsearch, Redis</dd>
   <dt>Cloud and DevOps</dt>
@@ -143,7 +180,7 @@
     <li>Designed the product around continuous compliance: risk and maturity scoring, prioritised remediation actions, evidence management, policy generation and audit preparation.</li>
     <li>Enforced tenant isolation twice, in application code and with PostgreSQL row-level security, and kept evidence and audit records append-only.</li>
     <li>Designed integrations that collect technical evidence automatically from AWS, Azure, GCP and GitHub.</li>
-    <li>Wrote a Claude Code plugin (12 agents, 15 commands) that runs each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached.</li>
+    <li>Created the Claude Code plugin the product is built with: 12 agents, 15 commands, 9 skills and 3 safety hooks that run each user story through architecture, task split, test-first implementation, a PASS/FAIL review and a pull request with evidence attached. It is project-agnostic and also runs unattended.</li>
     <li>Built an autonomous development environment in which a sandboxed coding agent works through the backlog one phase at a time, while I approve key decisions from my phone and merge every pull request.</li>
     <li>Own the technical direction: architecture, technology choices, data and API design, infrastructure and engineering practices, recorded in 27 architecture decision records.</li>
   </ul>
@@ -278,7 +315,7 @@
 
 <h2>Certification</h2>
 <ul class="plain">
-  <li><a href="https://www.credly.com/badges/b29c8bb5-3efc-4862-ad95-fd3805679e97/linked_in_profile">Claude Code Architect Certified</a></li>
+  <li><strong>Claude Certified Architect, Foundations</strong> · Anthropic · <a href="https://www.credly.com/badges/b29c8bb5-3efc-4862-ad95-fd3805679e97/linked_in_profile">credential</a></li>
 </ul>
 
 <h2>Education</h2>
